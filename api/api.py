@@ -11,11 +11,11 @@ class RequestUrl:
     API_URL_V = 'api/1/'
 
     def get_announcement(self, id):
-        """URL для получения одного обявления"""
+        """URL для получения одного объявления"""
 
         return requests.get(f"{self.base_url}{self.API_URL_V}item/{id}")
 
-    def get_all_announcement(self, seller_id):
-        """URL для получения всех обявлений"""
+    def get_all_announcements_seller(self, seller_id):
+        """URL для получения всех объявлений продавца"""
 
-        return requests.get(f"{self.base_url}{self.API_URL_V}{id}/item")
+        return requests.get(f"{self.base_url}{self.API_URL_V}{seller_id}/item")
