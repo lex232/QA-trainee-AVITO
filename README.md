@@ -37,17 +37,40 @@ python3 -m pip install --upgrade pip
 ```
 pip install -r requirements.txt
 ```    
+- Запустить тесты:
+```
+pytest -v
+```    
+
+## О технической реализации
+
+Проект выполнен на фреймворке Pytest языка программирования Python. Для валидации схемы данных используется - jsonschema
+
+### Структура проекта
 
 
-## Используемые зависимости requirements.txt
+### Используемые зависимости requirements.txt
 
+- attrs==24.2.0<br>
+- certifi==2024.8.30<br>
+- charset-normalizer==3.3.2<br>
 - colorama==0.4.6<br>
 - exceptiongroup==1.2.2<br>
+- idna==3.8<br>
 - iniconfig==2.0.0<br>
+- jsonschema==4.23.0<br>
+- jsonschema-specifications==2023.12.1<br>
 - packaging==24.1<br>
 - pluggy==1.5.0<br>
 - pytest==8.3.3<br>
+- pytest-jsonschema==1.0.0a2<br>
+- referencing==0.35.1<br>
+- requests==2.32.3<br>
+- rpds-py==0.20.0<br>
+- ruamel.yaml==0.18.6<br>
+- ruamel.yaml.clib==0.2.8<br>
 - tomli==2.0.1<br>
+- urllib3==2.2.2<br>
 
 ## Автор проекта
 
