@@ -36,3 +36,18 @@ valid_announcement_single_exist = {
     },
     "required": ["createdAt", "id", "name", "price", "sellerId", "statistics"]
 }
+
+valid_post_announcement = {
+    "type": "object",
+    "properties": {
+        "name": {"type": "string"},
+        "price": {"type": "number"},
+        "sellerId": {"type": "number"},
+        "statistics": {
+            "contacts": {"type": "number"},
+            "like": {"type": "number"},
+            "viewCount": {"type": "number"}
+        },
+    },
+    "required": ["name", "price", "sellerId"]
+}

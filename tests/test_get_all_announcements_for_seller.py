@@ -15,7 +15,6 @@ class TestGetAllAnnouncementsForSeller:
 
         response = RequestUrl().get_all_announcements_seller(seller_id=f'{exist_seller_id}')
         assert response.status_code == 200
-        print('TEXT', response.json())
         validate(instance=response.json()[0], schema=valid_announcement_single_exist)
         assert response.json()[0].get('sellerId') == int(f'{exist_seller_id}')
 
