@@ -22,7 +22,7 @@
 
 - Клонировать репозиторий в командной строке:
 ```
-git clone git@github.com:lex232/QA-trainee-AVITO.git
+git clone https://github.com/lex232/QA-trainee-AVITO.git
 ```
 - Перейдите в скачанную директорию:
 ```
